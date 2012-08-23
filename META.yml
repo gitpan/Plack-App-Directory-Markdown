@@ -8,7 +8,7 @@ configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
 dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,9 +23,10 @@ no_index:
 requires:
   Data::Section::Simple: 0
   Plack: 0
+  Plack::App::DataSection: 0
   Text::Markdown: 0
   Text::Xslate: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/Songmu/p5-Plack-App-Directory-Markdown.git
-version: 0.01
+version: 0.02
