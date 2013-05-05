@@ -4,11 +4,15 @@ author:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
 build_requires:
   ExtUtils::MakeMaker: 6.36
+  HTTP::Request::Common: 0
+  HTTP::Response: 0
+  Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.36
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.3.2, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,10 +20,19 @@ meta-spec:
 name: Plack-App-Directory-Markdown
 no_index:
   directory:
-    - inc
-    - share
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Plack::App::Directory::Markdown:
+    file: lib/Plack/App/Directory/Markdown.pm
+    version: 0.05
+  Plack::App::Directory::Markdown::Static:
+    file: lib/Plack/App/Directory/Markdown/Static.pm
 requires:
   Data::Section::Simple: 0
   Plack: 0
@@ -27,6 +40,7 @@ requires:
   Text::Markdown: 0
   Text::Xslate: 0
 resources:
-  license: http://dev.perl.org/licenses/
+  bugtracker: https://github.com/Songmu/p5-Plack-App-Directory-Markdown/issues
+  homepage: https://github.com/Songmu/p5-Plack-App-Directory-Markdown
   repository: git://github.com/Songmu/p5-Plack-App-Directory-Markdown.git
-version: 0.04
+version: 0.05
