@@ -3,16 +3,16 @@ abstract: 'Serve translated HTML from markdown files from document root with dir
 author:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.36
-  HTTP::Request::Common: 0
-  HTTP::Response: 0
+  HTTP::Message: 0
+  Plack::Test: 0
   Test::More: 0
 configure_requires:
   CPAN::Meta: 0
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
+  perl: 5.008_001
 dynamic_config: 0
-generated_by: 'Minilla/v0.3.2, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Minilla/v0.5.3, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,17 +30,21 @@ no_index:
 provides:
   Plack::App::Directory::Markdown:
     file: lib/Plack/App/Directory/Markdown.pm
-    version: 0.05
+    version: 0.06
   Plack::App::Directory::Markdown::Static:
     file: lib/Plack/App/Directory/Markdown/Static.pm
+    version: 0
 requires:
   Data::Section::Simple: 0
-  Plack: 0
+  FindBin::libs: 0
+  HTTP::Date: 0
   Plack::App::DataSection: 0
-  Text::Markdown: 0
+  Plack::App::Directory: 0
   Text::Xslate: 0
+  URI: 0
+  parent: 0
 resources:
   bugtracker: https://github.com/Songmu/p5-Plack-App-Directory-Markdown/issues
   homepage: https://github.com/Songmu/p5-Plack-App-Directory-Markdown
   repository: git://github.com/Songmu/p5-Plack-App-Directory-Markdown.git
-version: 0.05
+version: 0.06
