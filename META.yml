@@ -5,7 +5,7 @@ author:
 build_requires:
   HTTP::Message: 0
   Plack::Test: 0
-  Test::More: 0
+  Test::More: 0.98
 configure_requires:
   CPAN::Meta: 0
   CPAN::Meta::Prereqs: 0
@@ -30,7 +30,7 @@ no_index:
 provides:
   Plack::App::Directory::Markdown:
     file: lib/Plack/App/Directory/Markdown.pm
-    version: 0.06
+    version: 0.07
   Plack::App::Directory::Markdown::Static:
     file: lib/Plack/App/Directory/Markdown/Static.pm
     version: 0
@@ -40,6 +40,7 @@ requires:
   HTTP::Date: 0
   Plack::App::DataSection: 0
   Plack::App::Directory: 0
+  Text::Markdown: 0
   Text::Xslate: 0
   URI: 0
   parent: 0
@@ -47,4 +48,6 @@ resources:
   bugtracker: https://github.com/Songmu/p5-Plack-App-Directory-Markdown/issues
   homepage: https://github.com/Songmu/p5-Plack-App-Directory-Markdown
   repository: git://github.com/Songmu/p5-Plack-App-Directory-Markdown.git
-version: 0.06
+version: 0.07
+x_contributors:
+  - 'Karen Etheridge <ether@cpan.org>'

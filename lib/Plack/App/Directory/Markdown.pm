@@ -2,7 +2,7 @@ package Plack::App::Directory::Markdown;
 use strict;
 use warnings;
 use utf8;
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use parent 'Plack::App::Directory';
 use Plack::App::Directory::Markdown::Static;
@@ -238,11 +238,11 @@ Plack::App::Directory::Markdown - Serve translated HTML from markdown files from
 
   # app.psgi
   use Plack::App::Directory::Markdown;
-  my $app = Plack::App::Dirctory::Markdown->new->to_app;
+  my $app = Plack::App::Directory::Markdown->new->to_app;
 
   # app.psgi(with options)
   use Plack::App::Directory::Markdown;
-  my $app = Plack::App::Dirctory::Markdown->new({
+  my $app = Plack::App::Directory::Markdown->new({
     root           => '/path/to/markdown_files',
     title          => 'page title',
     tx_path        => '/path/to/xslate_templates',
